@@ -49,8 +49,53 @@ body {
 
 /* NavBar*/
 
-header {
+/*
+.Bottombar {
+    width: 100vw;
+    height: 67px;
+    border-radius: 24px 24px 0px 0px;
+    background: #3b2051;
+    position: fixed;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.Bottombar a {
+    list-style: none;
+    text-decoration: none;
+    padding: 16px;
+    align-items: center;
+
+
+}
+
+.Bottombar ul {
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 67px;
+    border-radius: 24px 24px 0px 0px;
+    background: #E8DDF1;
+    position: fixed;
+    padding-inline-start: 0px;
+    
+}
+.Bottombar ul li {
+    align-items: center;
+    position: sticky;
+}
+*/
+
+
+
+header {
     background-color: var(--background);
     display: flex;
     justify-content: space-between;
@@ -59,8 +104,8 @@ header {
     box-shadow: 0px 4px 4px 0px rgba(28, 28, 28, 0.15);
     gap: 16px;
     padding: 16px;
-
 }
+
 
 
 .logo img {
@@ -70,6 +115,7 @@ header {
     margin-left: 24px;
 
 }
+
 
 
 #menu-items a {
@@ -111,6 +157,7 @@ header {
 
 
 }
+
 
 
 /* Banner
@@ -260,26 +307,24 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
 /* Footer logotipos*/
 
 .footer_logos {
-   display: flex;
-   flex-wrap: nowrap;
-   overflow-x: auto;
-   justify-content: space-around;
-   scroll-behavior:smooth;
-   
-}
-
-.footer_logos img {
-
-    padding: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-around;
+    scroll-behavior:smooth;
     
-}
+ }
+ 
+ .footer_logos img {
+     padding: 16px;
+     
+ }
 
-.footer_logos img:hover {
+ .footer_logos img:hover {
+     padding: 16px;
+     border-bottom: 4px solid var(--color-primary);
+     
+     
+ }
 
-    padding: 16px;
-    border-bottom: 4px solid var(--color-primary);
-    
-    
-}
 
-}
