@@ -101,6 +101,7 @@ header {
 
 }
 
+
 ul {
     display: flex;
     flex-direction: row;
@@ -134,7 +135,7 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
 
 }
 
@@ -166,20 +167,26 @@ li {
     border-radius: 34px;
     font-style: normal;
     font-weight: 900;
-
-
 }
+
 
 
 
 /* Banner
 con transform lo que le pido al código es que del 50% del padre, le reste un 50% de su propio eje*/
 
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
 .titlebanner {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .titlebanner h1 {
@@ -188,26 +195,13 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: ITC Avant Garde Gothic Std;
     font-size: 96px;
+    max-width: 900px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 24px;
 }
 
-.hola {
-    color: var(--text01);
-    text-align: center;
-    font-family: AvantGarde LT Book;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -4.8px;
-    width: 800px;
-    line-height: 50px;
-
-
-}
 
 .titlebanner h2 {
     color: var(--text01);
@@ -280,11 +274,11 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
 
 .buttons_home {
 
-    position: absolute;
-    top: 73%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+   
 
 
 }
@@ -300,7 +294,9 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
     color: var(--color-primary);
     border-radius: 32px;
     border: 3px solid var(--color-primary);
-    margin-right: 24px;
+    min-width: 110px;
+    text-align: center;
+    
 
 }
 
@@ -322,11 +318,12 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-behavior: smooth;
-    position: inherit;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     justify-content: space-around;
     background-color: #000000;
-    
+
 
 }
 
@@ -344,87 +341,64 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
 
 
 
-
-/* MEDIAS QUERIES*/
-
-@media all and (max-width: 900px) {
-
-    header {
-
-        display: none;
-
-    }
-}
+/* @media all and (max-width: 900px) {
+header {
+    display: none;
+} */
 
 
-@media all and (max-width: 740px) {
 
-    header {
-        display: none;
-    }
-
-    body {
-        background-color: var(--background);
-        background-image: url("");
-    }
+@media (min-width: 375px) and (max-width: 700px) {
 
     /* Banner
 con transform lo que le pido al código es que del 50% del padre, le reste un 50% de su propio eje*/
 
-    .titlebanner {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .bannerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding:8px 0;
+    }
 
+    .titlebanner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .titlebanner h1 {
         color: var(--color-primary);
         text-align: center;
-        font-feature-settings: 'clig' off, 'liga' off;
         font-family: ITC Avant Garde Gothic Std;
-        font-size: 60px;
+        font-size: 48px;
         font-style: normal;
         font-weight: 700;
-        line-height: 100%;
-        letter-spacing: 18px;
+        letter-spacing: 12px;
     }
 
-    .hola {
-        color: var(--text01);
-        text-align: center;
-        font-family: AvantGarde LT Book;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -4.8px;
-        width: 800px;
-        line-height: 50px;
-
-
-    }
+   
 
     .titlebanner h2 {
         color: var(--text01);
         text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
         font-family: AvantGarde LT Book;
-        font-size: 60px;
+        font-size: 48px;
         font-style: normal;
         font-weight: 700;
+        width: 300px;
         line-height: normal;
-        letter-spacing: -4.8px;
-        width: 800px;
-        line-height: 50px;
+        letter-spacing: -2.4px;
 
     }
 
     .titlebanner h3 {
         color: var(--text01);
         text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
         font-family: AvantGarde LT Book;
-        font-size: 60px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -433,9 +407,9 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
 
     .titlebanner h4 {
         color: var(--color-primary);
-        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
         font-family: AvantGarde LT Book;
-        font-size: 60px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -446,21 +420,21 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
         color: var(--text01);
         text-align: center;
         font-family: AvantGarde LT Book;
-        font-size: 60px;
+        font-size: 48px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: -4px;
+        letter-spacing: -2.4px;
     }
 
     .titlebanner h5 {
         color: var(--text01);
-        text-align: center;
         font-family: Open Sans;
-        font-size: 32px;
+        font-size: 20px;
         font-style: normal;
-        font-weight: lighter;
+        font-weight: 300;
         line-height: 89%;
+        margin-top: 8px;
 
     }
 
@@ -471,46 +445,81 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
 
     }
 
-    /* Buttons home*/
+
+    /*Buttons*/
 
 
 .buttons_home {
 
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 16px;
+    padding: 16px;
+   
 
 
 }
 
 .buttons_home a {
-    padding: 16px;
-    font-size: 24px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 900;
     text-decoration: none;
     color: var(--color-primary);
     border-radius: 32px;
     border: 3px solid var(--color-primary);
+    min-width: 110px;
+    text-align: center;
+    
+
+}
+
+ /*TABS*/
+
+header {
+    display: block;
+    height: 74px;
+
+
+}
+
+ul {
+    display: none;
    
-    display: flex;
-    width: 342px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 24px;
+}
+
+li {
+
+    display: none;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+
+    height: auto;
+    margin-right: 24px;
     margin-left: 24px;
+    
 
 }
 
 
+#menu-items a {
+    display: none;
 
+}
 
-
-
+#menu-items a{
+    display: block;
+    
+}
 
 
 
