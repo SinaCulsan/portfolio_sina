@@ -1,0 +1,526 @@
+/* Librería de colores estilo 1*/
+
+:root {
+
+    --color-primary: #feb61a;
+    --color-primary-hover: #307d17;
+    --color-secundary: #610a8c;
+    --color-tertiary: #8D8D8D;
+
+    --background: #0C0C0C;
+    --background-hover: #282828;
+
+    --text01: #FFFFFF;
+    --text02: var(--color-primary)
+}
+
+/* Tipografía*/
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: var(--background);
+    background-image: url("../recursos/imagenes/bacground2.svg");
+    position: inherit;
+}
+
+
+
+/* Background*/
+
+
+
+
+
+
+
+/* NavBar*/
+
+/*
+.Bottombar {
+    width: 100vw;
+    height: 67px;
+    border-radius: 24px 24px 0px 0px;
+    background: #3b2051;
+    position: fixed;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Bottombar a {
+    list-style: none;
+    text-decoration: none;
+    padding: 16px;
+    align-items: center;
+
+
+}
+
+.Bottombar ul {
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 67px;
+    border-radius: 24px 24px 0px 0px;
+    background: #E8DDF1;
+    position: fixed;
+    padding-inline-start: 0px;
+    
+}
+.Bottombar ul li {
+    align-items: center;
+    position: sticky;
+}
+*/
+
+
+
+header {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(28, 28, 28, 0.15);
+    gap: 16px;
+    padding: 16px;
+
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+}
+
+li {
+
+    list-style: none
+}
+
+.logo img {
+
+    height: auto;
+    margin-right: 24px;
+    margin-left: 24px;
+
+}
+
+
+
+#menu-items a {
+    padding: 16px;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+#menu-items a:hover {
+
+    color: var(--color-primary);
+    font-size: medium;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+
+#menu-items a:active {
+    color: var(--color-primary-hover)
+}
+
+
+#changeStyleButton {
+    background-color: var(--color-primary-hover);
+    border-radius: 34px;
+    font-style: normal;
+    font-weight: 900;
+
+
+}
+
+
+#changeStyleButton:hover {
+    background-color: var(--text01);
+    border-radius: 34px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+
+
+
+/* Banner
+con transform lo que le pido al código es que del 50% del padre, le reste un 50% de su propio eje*/
+
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+.titlebanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlebanner h1 {
+    color: var(--color-primary);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: ITC Avant Garde Gothic Std;
+    font-size: 96px;
+    max-width: 900px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 24px;
+}
+
+
+.titlebanner h2 {
+    color: var(--text01);
+    text-align: center;
+    font-family: AvantGarde LT Book;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4.8px;
+    width: 800px;
+    line-height: 50px;
+
+}
+
+.titlebanner h3 {
+    color: var(--text01);
+    text-align: center;
+    font-family: AvantGarde LT Book;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+}
+
+.titlebanner h4 {
+    color: var(--color-primary);
+    text-align: center;
+    font-family: AvantGarde LT Book;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+}
+
+.titlebanner p {
+    color: var(--text01);
+    text-align: center;
+    font-family: AvantGarde LT Book;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+}
+
+.titlebanner h5 {
+    color: var(--text01);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 89%;
+
+}
+
+.basedinvalencia {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+
+}
+
+
+/* Buttons home*/
+
+
+.buttons_home {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+   
+
+
+}
+
+.buttons_home a {
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-primary);
+    border-radius: 32px;
+    border: 3px solid var(--color-primary);
+    min-width: 110px;
+    text-align: center;
+    
+
+}
+
+.buttons_home a:hover {
+
+    background-color: var(--color-primary);
+    color: var(--text01);
+    border-radius: 34px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+
+
+/* Footer logotipos*/
+
+.footer_logos {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #000000;
+
+
+}
+
+.footer_logos img {
+    padding: 16px;
+
+}
+
+.footer_logos img:hover {
+    padding: 16px;
+    border-bottom: 4px solid var(--color-primary);
+
+
+}
+
+
+
+/* @media all and (max-width: 900px) {
+header {
+    display: none;
+} */
+
+
+
+@media (min-width: 375px) and (max-width: 700px) {
+
+    /* Banner
+con transform lo que le pido al código es que del 50% del padre, le reste un 50% de su propio eje*/
+
+    .bannerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding:8px 0;
+    }
+
+    .titlebanner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titlebanner h1 {
+        color: var(--color-primary);
+        text-align: center;
+        font-family: ITC Avant Garde Gothic Std;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 12px;
+    }
+
+   
+
+    .titlebanner h2 {
+        color: var(--text01);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: AvantGarde LT Book;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        width: 300px;
+        line-height: normal;
+        letter-spacing: -2.4px;
+
+    }
+
+    .titlebanner h3 {
+        color: var(--text01);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: AvantGarde LT Book;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -2px;
+    }
+
+    .titlebanner h4 {
+        color: var(--color-primary);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: AvantGarde LT Book;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -2px;
+    }
+
+    .titlebanner p {
+        color: var(--text01);
+        text-align: center;
+        font-family: AvantGarde LT Book;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -2.4px;
+    }
+
+    .titlebanner h5 {
+        color: var(--text01);
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 89%;
+        margin-top: 8px;
+
+    }
+
+    .basedinvalencia {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+
+    }
+
+
+    /*Buttons*/
+
+
+.buttons_home {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+   
+
+
+}
+
+.buttons_home a {
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-primary);
+    border-radius: 32px;
+    border: 3px solid var(--color-primary);
+    min-width: 110px;
+    text-align: center;
+    
+
+}
+
+ /*TABS*/
+
+header {
+    display: block;
+    height: 74px;
+
+
+}
+
+ul {
+    display: none;
+   
+}
+
+li {
+
+    display: none;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+
+    height: auto;
+    margin-right: 24px;
+    margin-left: 24px;
+    
+
+}
+
+
+#menu-items a {
+    display: none;
+
+}
+
+#menu-items a{
+    display: block;
+    
+}
+
+
+
+}
