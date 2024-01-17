@@ -5,7 +5,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 89%;
-    /* 44.5px */
     letter-spacing: 12.5px;
     margin-left: 5%;
     margin-top: 24px;
@@ -48,14 +47,41 @@
 
 .cardProyecto {
     width: 380px;
-    height: 335px;
     border-radius: 6px;
     background-color: black;
     box-shadow: 0px 7px 15.5px 0px rgba(125, 125, 125, 0.6);
-   display: flex;
-   flex-direction: column;
-   gap: 24px;
-   padding: 24px;
-  
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 24px 0 24px;
+    transition: all 0.5s ease;
+    position: relative;
+    /* Con transition, tenemos que darle una posición inicial que sería indicándolo con el top, en el hover, he hecho un cambio de la posición indicando con el top cómo va a moverse*/
+    top: 0; /*Esto es desde dónde empieza la animación*/
+    &:hover {
+        background-color: #9BCADE;
+        top: -20px; /*Cómo se va a mover*/
+        p {
+            color: #000;
+        }
 
+        h2 {
+            color: #000;
+        }
+        
+
+
+    }
+}
+
+
+
+
+.contenidoProyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 64px;
+    justify-content: center;
 }
