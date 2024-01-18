@@ -16,9 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-
-    <!-- enlace a mi javascript -->
-    <script src="./js/script.js"></script>
+<!-- Fontawesome -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d852f36c8f.css" crossorigin="anonymous">
+    
 
 
 </head>
@@ -29,20 +29,26 @@
 
     <!-- HEADER -->
 
-    <header id="menu-items">
-        
+
+    <header class="menuItems">
+
+        <div class="menuLogo">
+            <button class="abrirMenu" id="abrir"><i class="fa-solid fa-bars"></i></button>
+            
             <div class="profile-image"><img src="./recursos/logo/logosina.svg" alt="isotipo">
             </div>
 
-       
 
-        <!-- HEADER -->
-        <nav class="menu">
-            <ul>
-                <li> <a id="changeStyleButton" href="##" onclick="changeStyle()">Change the Style!</a></li>
-                <li> <a href="##">Home</a></li>
-                <li> <a href="##">Work</a></li>
-                <li> <a href="">About me</a></li>
+            
+        </div>
+
+        <nav class="nav" id="nav">
+            <button class="cerrarMenu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="navList">
+                <li> <a id="changeStyleButton" href="#" onclick="changeStyle()">Change the Style!</a></li>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Work</a></li>
+                <li> <a href="#">About me</a></li>
                 <li> <a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -117,7 +123,8 @@
 
 
 
-
+<!-- enlace a mi javascript -->
+<script src="./js/script.js"></script>
 </body>
 
 </html>
