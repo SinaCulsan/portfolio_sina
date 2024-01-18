@@ -144,6 +144,7 @@ li {
 
     color: var(--color-primary);
     font-size: medium;
+    transition: all 200ms ease-out;
     
 }
 
@@ -312,6 +313,7 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
     border: 3px solid var(--text01);
     min-width: 110px;
     text-align: center;
+    transition: all 200ms ease-out;
    
 }
 
@@ -327,8 +329,8 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
     position: absolute;
     bottom: 0;
     width: 100%;
-    justify-content: space-around;
     background-color: #000000;
+    justify-content: space-around;
 
 
 }
@@ -579,15 +581,9 @@ header {
 }
 
 
-
-
 .nav.visible {
     opacity: 1;
     visibility: visible;
 }
 
-}
-
-.footer_logos {
-    justify-content: inherit;
 }
