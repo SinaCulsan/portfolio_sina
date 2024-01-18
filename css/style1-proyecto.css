@@ -1,3 +1,21 @@
+
+/* Tipografía*/
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: var(--background);
+    background-image: url("../recursos/imagenes/bacground2.svg");
+    position: inherit;
+}
+
+
+
 .titlePage {
     color: var(--color-primary);
     font-family: 'Open Sans', sans-serif;
