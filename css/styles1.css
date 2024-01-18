@@ -387,6 +387,9 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
         font-weight: 700;
         letter-spacing: 12px;
         max-width: 650px;
+        animation: crt-me 2500ms infinite linear alternate-reverse;
+            
+    
     }
 
    /* .titlebanner h1{
