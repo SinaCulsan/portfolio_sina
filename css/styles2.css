@@ -27,7 +27,6 @@ body {
     background-color: var(--background);
     background-image: url("../recursos/imagenes/StyleMerca.svg");
     background-size: cover;
-
     position: inherit;
 }
 

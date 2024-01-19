@@ -9,8 +9,8 @@
     <!-- Le incluyo un ID a styles para poder gestionar el cambio de estilo con js -->
 
 
-    <link rel="stylesheet" href="./css/style1-proyecto.css">
-    <link id="style" rel="stylesheet" href="./css/styles1.css">
+    <link rel="stylesheet" href="./css/estilo1/style1-proyecto.css">
+    <link id="style" rel="stylesheet" href="./css/estilo1/styles1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -24,6 +24,8 @@
 
 <body>
 
+
+
     <!-- HEADER -->
 
 
@@ -31,23 +33,25 @@
 
         <div class="menuLogo">
             <button class="abrirMenu" id="abrir"><i class="fa-solid fa-bars"></i></button>
-
+            
             <div class="profile-image"><img src="./recursos/logo/logosina.svg" alt="isotipo">
             </div>
 
 
-
+            
         </div>
 
         <nav class="nav" id="nav">
-            <button class="cerrarMenu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
-            <ul class="navList">
-                <li> <a id="changeStyleButton" href="#" onclick="changeStyle()">Change the Style!</a></li>
-                <li> <a href="home.html">Home</a></li>
-                <li> <a href="proyectos.html">Work</a></li>
-                <li> <a href="aboutme.html">About me</a></li>
-                <li> <a href="#">Contact</a></li>
-            </ul>
+            <div class="navContainer">
+                <button class="cerrarMenu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+                <ul class="navList">
+                    <li> <a id="changeStyleButton" href="#" onclick="changeStyle()">Change the Style!</a></li>
+                    <li> <a href="home.html">Home</a></li>
+                    <li> <a href="proyectos.html">Work</a></li>
+                    <li> <a href="aboutme.html">About me</a></li>
+                    <li> <a href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
     </header>
