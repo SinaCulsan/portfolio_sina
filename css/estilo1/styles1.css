@@ -14,7 +14,7 @@
     --text02: var(--color-primary)
 }
 
-/* Tipografía*/
+/* RESET*/
 * {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -30,7 +30,7 @@ body {
     
 }
 
-
+/* HOME*/
 
 header {
     background-color: var(--background);
@@ -292,105 +292,6 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
 
 }
 
-
-
-
-/*******************************/
-/* ESTILOS DE CONTACTO */
-
-.tittleEmail a {
-
-    color: var(--color-primary);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 24px;
-    margin-left: 5%;
-
-}
-
-.input {
-    padding: 16px;
-    
-    border-radius: ;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 100;
-    color: var(--color-secundary);
-    background-color: #ffffff;
-    border-radius: 32px;
-    border: 2px solid var(--color-primary);
-    width: 500px;
-
-}
-
-.input::placeholder {
-    color: #8D8D8D;
-}
-
-.inputArea {
-    padding: 16px;
-   
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 100;
-    color: var(--color-secundary);
-    background-color: #ffffff;
-    border-radius: 32px;
-    border: 2px solid var(--color-primary);
-    width: 500px;
-    height: 150px;
-    max-height: 300px;
-    min-height: 300px;;
-    max-width: 500px;
-    min-width: 500px;
-}
-
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-top: 40px;
-}
-
-.contact {
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-    gap: 100px;
-   
-}
-
-/* Galería de imágenes*/
-
-section {
-    display: flex;
-    width: 600px;
-    height: 400px;
-    
-}
-
-section img {
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 8;
-    transition: .5s ease;
-
-}
-
-section img:hover {
-    cursor: crosshair;
-    width: 300px;
-   box-shadow: #000000;
-    position: relative;
-    opacity: 1;
-    width: 400px;
-    
-
-}
 
 
 /* @media all and (max-width: 900px) {
