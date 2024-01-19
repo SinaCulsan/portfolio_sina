@@ -16,7 +16,6 @@
     flex-direction: row;
     gap: 8px;
 
-
 }
 
 .titleContentCard h2 {
@@ -42,9 +41,7 @@
     font-weight: 300;
     line-height: normal;
     max-width: 300px;
-
 }
-
 
 .cardProyecto {
     width: 380px;
@@ -75,8 +72,6 @@
 
     }
 }
-
-
 
 
 .contenidoProyectos {
