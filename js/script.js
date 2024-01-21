@@ -4,8 +4,8 @@
 
 /*Al principio había hecho un cambio muy sencillo pero como no se me guardaba el estilo en el que estaba cuando pulsaba a cualquier otra página, he decidido usar algo que nos enseñaste en clase que es el local storage*/
 //Esto me ha costado un mes hacerlo... me he visto todos los vídeos de clase, los vídeos que yo copié, y todo youtube.:(
-//comprobar si existe cada vez que cargo el elemento
-if (localStorage.getItem("estiloGuardado") === null) {
+//comprobar si existe cada vez que cargo el elemento. 
+if (localStorage.getItem("estiloGuardado") === null || localStorage.getItem("estiloGuardado") == 0) {
     // Si no existe, establecemos el valor inicial
     localStorage.setItem("estiloGuardado", "1");
   } else {

@@ -1,0 +1,27 @@
+[{
+      "nombre": "Efecto margarita",
+      "descripcion": "Gestión de aperturas, cierrres y reformas de un gran supermercado.",
+      "imagen": "../recursos/Proyectos/efecto margarita.png"
+
+    },{
+      "nombre": "Planogramas",
+      "descripcion": "Creación y gestión  de la distribución interna de escaparates.",
+      "imagen": "../recursos/Proyectos/Planogramas.png"
+
+    },{
+      "nombre": "MUS Design System",
+      "descripcion": "Creación del sistema de diseño de desktop y nativo.",
+      "imagen": "../recursos/Proyectos/mercadona.png"
+
+    },{
+      "nombre": "Denuncias",
+      "descripcion": "Aplicación diseñada en Android para la gestión de robos en supermercados.",
+      "imagen": "../recursos/Proyectos/Denuncias.png"
+
+    },{
+      "nombre": "Multichannel Platform",
+      "descripcion": "Plataforma (SAS) ge estión de catálogo y venta en diferentes ecommerce o marketplaces.",
+      "imagen": "../recursos/Proyectos/MIP.png"
+
+    }
+]
