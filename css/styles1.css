@@ -279,10 +279,9 @@ con transform lo que le pido al código es que del 50% del padre, le reste un 50
 
 .footer_logos img {
     padding: 16px;
-    fill:#FF7D8D;
-/*HEEEELP*/
-}
+    border-bottom: 4px solid transparent;
 
+}
 
 
 
