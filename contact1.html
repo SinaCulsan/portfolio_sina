@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+
+    <!-- Le incluyo un ID a styles para poder gestionar el cambio de estilo con js -->
+
+    <link id="style" rel="stylesheet" href="./css/styles1.css">
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d852f36c8f.css" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+
+
+
+    <!-- HEADER -->
+
+
+    <header class="menuItems">
+
+        <div class="menuLogo">
+            <button class="abrirMenu" id="abrir"><i class="fa-solid fa-bars"></i></button>
+
+            <div class="profile-image">
+                <a href="index.html"><img src="./recursos/logo/logosina.svg" alt="isotipo"></a>
+            </div>
+
+
+
+        </div>
+
+        <nav class="nav" id="nav">
+            <button class="cerrarMenu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="navList">
+                <li> <a id="changeStyleButton" href="#" onclick="changeStyle()">Change the Style!</a></li>
+                <li> <a href="index.html">Home</a></li>
+                <li class="active"> <a href="proyectos.html">Work</a></li>
+                <li> <a href="aboutme.html">About me</a></li>
+                <li> <a href="contact1.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+
+    <!-- Texto -->
+
+
+    <h1 class="titlePage">¡Hola!</h1>
+
+    <div class="aboutMe">
+        <div class="textos">
+            <h2>
+               Juntos podemos crear magia
+            </h2>
+
+            <div class="formulario">
+
+                <form method="get" action="">
+    
+                    <input class="input" placeholder="Tu nombre" type="text" name="nombre">
+                    <input class="input" placeholder="Escribe tu correo" type="email" name="email">
+                    <textarea rows="10" cols="40" class="inputArea" placeholder="¿En qué te puedo ayudar?"
+                        name="mensaje"></textarea>
+                    <input class="buttonCV" type="submit" name="enviar" value="enviar mensaje" class="buttonEnviar">
+    
+                </form>
+    
+            </div>
+
+        </div>
+        <div>
+            <section>
+                <img src="./recursos/imagenes/CNV.png" alt="">
+                <img src="./recursos/imagenes/Efecto margarita.png" alt="">
+                <img src="./recursos/imagenes/Web corporativa.png" alt="">
+        
+            </section>
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    < <!-- enlace a mi javascript -->
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
