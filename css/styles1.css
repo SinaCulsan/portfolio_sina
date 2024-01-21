@@ -1,0 +1,949 @@
+/* Librería de colores estilo 1*/
+
+:root {
+
+    --color-primary: #FF7D8D;
+    --color-primary-hover: #eb5c6d;
+    --color-secundary: #FCF0E8;
+    --color-tertiary: #8D8D8D;
+
+    --background: #FFF6F7;
+    --background-hover: #484848;
+    --background-second: white;
+
+    --text01: #6D6D6D;
+    --text02: var(--color-primary);
+    --text03: white;
+}
+
+/* RESET*/
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: var(--background);
+    background-image: url("/recursos/imagenes/Estilo1.svg");
+
+    
+    
+}
+
+/* HOME*/
+
+header {
+    background-color: var(--background-second);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(28, 28, 28, 0.15);
+    gap: 16px;
+    padding: 16px;
+    max-height: 85px;
+   
+
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+li {
+
+    list-style: none
+}
+
+.logo img {
+
+    height: auto;
+    margin-right: 24px;
+    margin-left: 24px;
+    fill: grey;
+
+}
+
+.profile-image {
+    fill: grey;
+    
+}
+
+
+.menuItems a {
+    padding: 16px;
+    font-size: medium;
+    text-decoration: none;
+    color: var(--text01);
+    font-style: normal;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+.menuItems a:hover {
+
+    color: var(--color-primary);
+    font-size: medium;
+    transition: all 200ms ease-out;
+
+}
+
+
+.active {
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+
+}
+
+
+#changeStyleButton {
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+    border-radius: 34px;
+    font-style: normal;
+    font-weight: 900;
+
+}
+
+
+#changeStyleButton:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--text03);
+    border-radius: 34px;
+    font-style: normal;
+    font-weight: 900;
+    transition: all 300ms;
+}
+
+.abrirMenu {
+    display: none;
+}
+
+.cerrarMenu {
+    display: none;
+
+}
+
+
+
+/* Banner
+con transform lo que le pido al código es que del 50% del padre, le reste un 50% de su propio eje*/
+
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+
+.titlebanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlebanner h1 {
+    color: var(--color-primary);
+    text-shadow: 0px 4px 15.1px var(--color-primary);
+    text-align: center;
+    
+    max-width: 900px;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 89%;
+    letter-spacing: 23px;
+
+}
+
+
+.titlebanner h2 {
+
+    color: var(--text01);
+    text-align: center;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+}
+
+.titlebanner h3 {
+    color: var(--text01);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+    margin: 0;
+    text-align: center;
+}
+
+.titlebanner h4 {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+    
+}
+
+.titlebanner p {
+    color: var(--text01);
+    text-align: center;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+}
+
+.titlebanner h5 {
+    color: var(--text01);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 89%;
+
+}
+
+.basedinvalencia {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    
+
+}
+
+
+/* Buttons home*/
+
+
+.buttons_home {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+
+.buttons_home a:hover {
+
+    color: var(--text03);
+    background-color: var(--color-primary-hover);
+    border-radius: 32px;
+    min-width: 110px;
+    text-align: center;
+    transition: all 200ms ease-out;
+
+}
+
+
+
+/* Footer logotipos*/
+
+.footer_logos {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background-second);
+    justify-content: space-around;
+
+
+}
+
+.footer_logos img {
+    padding: 16px;
+    fill:#FF7D8D;
+/*HEEEELP*/
+}
+
+
+
+
+.footer_logos img:hover {
+    padding: 16px;
+    border-bottom: 4px solid var(--color-primary);
+
+
+}
+
+
+
+/* @media all and (max-width: 900px) {
+header {
+    display: none;
+} */
+
+
+
+@media (min-width: 375px) and (max-width: 830px) {
+
+    /* Banner
+con transform lo que le pido al código es que del 50% del padre, le reste un 50% de su propio eje*/
+
+    .bannerContainer {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 8px 0;
+    }
+
+    .titlebanner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .titlebanner h1 {
+        color: var(--color-primary);
+        text-align: center;
+        font-family: ITC Avant Garde Gothic Std;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 12px;
+        max-width: 650px;
+    }
+
+    /* .titlebanner h1{
+        color: var(--color-primary);
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;    
+        max-width: 900px;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 89%; 
+        letter-spacing: 23px;
+   } */
+
+    .titlebanner h2 {
+        color: var(--text01);
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        width: 300px;
+        line-height: normal;
+        letter-spacing: -2.4px;
+
+    }
+
+    .titlebanner h3 {
+        color: var(--text01);
+        text-align: center;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -2px;
+    }
+
+    .titlebanner h4 {
+        color: var(--color-primary);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -2px;
+    }
+
+    .titlebanner p {
+        color: var(--text01);
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -2.4px;
+    }
+
+    .titlebanner h5 {
+        color: var(--text01);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 89%;
+        margin-top: 8px;
+
+    }
+
+    .basedinvalencia {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+
+    }
+
+
+
+
+    /*TABS*/
+
+    header {
+        height: 109px;
+    }
+
+    .menuLogo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+
+    }
+
+    .nav {
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: end;
+        gap: 40px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: var(--background);
+        padding: 60px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 300ms ease-out;
+        z-index: 1;
+
+    }
+
+    .navContainer {
+        visibility: hidden;
+    }
+
+
+    .navList {
+        flex-direction: column;
+
+
+    }
+
+    .abrirMenu {
+        display: block;
+        border: 0;
+        font-size: 24px;
+        background-color: transparent;
+        color: var(--text01);
+        cursor: pointer;
+
+    }
+
+    .cerrarMenu {
+        display: block;
+        border: 0;
+        font-size: 24px;
+        background-color: transparent;
+        color: var(--text01);
+        cursor: pointer;
+
+    }
+
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav.visible .navContainer {
+        visibility: visible;
+    }
+
+}
+
+
+/*****************/
+/*ESTILOS ABOUT ME*/
+
+
+
+video {
+    height: 800px;
+    padding: 24px;
+}
+
+.titlePage {
+    color: var(--color-primary);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 89%;
+    letter-spacing: 12.5px;
+    margin-top: 24px;
+    max-width: 1000px;
+}
+
+h2 {
+
+    color: var(--text01);
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+    max-width: 1300px;
+    max-width: 1000px;
+}
+
+h3 {
+    color: var(--text01);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    max-width: 1000px;
+    margin-top: 24px;
+    max-width: 1000px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    padding: 16px;
+    border-radius: 24px;
+}
+
+.buttonCV {
+
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color:var(--background);
+    border-radius: 32px;
+    border: 3px solid var(--color-primary);
+    text-align: center;
+    max-width: 200px;
+    margin-top: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.buttonCV::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgb(255, 20, 161), var(--color-primary), rgb(255, 0, 221), var(--color-secundary), rgb(205, 53, 134), var(--color-primary), rgb(255, 0, 132), var(--color-secundary));
+    background-size: 800%;
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+
+}
+
+.buttonCV:hover {
+    background-color: var(--color-primary-hover);
+    transition: all 300ms ease-out;
+    color: white;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+
+}
+
+
+
+@media (min-width: 1100px) and (max-width: 1172px) {
+  
+
+    .titlePage {
+        font-size: 50px;
+    }
+
+    video {
+        height: 80vh;
+        padding: 24px;
+
+    }
+
+}
+
+@media (min-width: 1040px) and (max-width: 1100px) {
+
+    video {
+        height: 80vh;
+        padding: 24px;
+    }
+
+    .titlePage {
+        font-size: 40px;
+
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+}
+
+
+@media (min-width: 830px) and (max-width: 1040px) {
+
+    video {
+        height: 70vh;
+        padding: 24px;
+    }
+
+    .titlePage {
+        font-size: 35px;
+
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+}
+
+
+
+
+@media (min-width: 375px) and (max-width: 830px) {
+
+
+    .titlePage {
+        color: var(--color-primary);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 89%;
+        letter-spacing: 12.5px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 24px;
+        letter-spacing: 0;
+        max-width: 600px;
+    }
+
+    h2 {
+
+        color: var(--text01);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 5%;
+        margin-right: 5%;
+        letter-spacing: 0;
+        max-width: 500px;
+    }
+
+    video {
+        height: 500px;
+        padding: 24px;
+    }
+
+    h3 {
+
+        max-width: 350px;
+        margin-left: 5%;
+        margin-top: 24px;
+    }
+
+    .buttonCV {
+        max-width: 100vw;
+        margin-right: 5%;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+/*******************************/
+/* ESTILOS DE PROYECTO */
+
+.titlePage {
+    color: var(--color-primary);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 89%;
+    letter-spacing: 12.5px;
+    margin-left: 5%;
+    margin-top: 24px;
+}
+
+.titleContentCard {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+}
+
+
+
+.titleContentCard h3 {
+    color: var(--text01);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 0;
+}
+
+.contentCard p {
+    color: var(--text01);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 300px;
+}
+
+.cardProyecto {
+    width: 380px;
+    border-radius: 6px;
+    background-color: var(--color-secundary);
+    box-shadow: 0px 7px 15.5px 0px rgba(243, 180, 215, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 24px 0 24px;
+    transition: all 0.5s ease;
+    position: relative;
+    /* Con transition, tenemos que darle una posición inicial que sería indicándolo con el top, en el hover, he hecho un cambio de la posición indicando con el top cómo va a moverse*/
+    top: 0; /*Esto es desde dónde empieza la animación*/
+
+    /* He visto en un vídeo la posibilidad de meter el hover así y la verdad es que me ha parecido más agradable visualmente*/
+    &:hover {
+        background-color: #fcc3ca;
+        top: -20px; /*Cómo se va a mover*/
+        p {
+            color: var(--text01);
+        }
+
+        h2 {
+            color: var(--color-secundary);
+        }
+
+
+    }
+}
+
+.contenidoProyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 64px;
+    justify-content: center;
+}
+
+/*******************************/
+/* ESTILOS DE CONTACTO */
+
+
+.titlePage {
+    color: var(--color-primary);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 89%;
+    letter-spacing: 12.5px;
+    margin-top: 24px;
+    letter-spacing: 0;
+    max-width: 600px;
+}
+
+.email{
+    color: var(--color-primary-hover);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 24px;
+    text-decoration: none;
+}
+
+.input {
+    padding: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    color: var(--color-secundary);
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid var(--color-primary);
+    width: 500px;
+
+}
+
+.input::placeholder {
+    color: #8D8D8D;
+}
+
+.inputArea {
+    padding: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    color: var(--color-secundary);
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid var(--color-primary);
+    width: 500px;
+    height: 150px;
+    max-height: 300px;
+    min-height: 300px;;
+    max-width: 500px;
+    min-width: 500px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+    margin-left: 5%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+   
+}
+
+/* Galería de imágenes*/
+
+section {
+    display: flex;
+    width: 800px;
+    height: 700px;
+    
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+   box-shadow: #000000;
+    position: relative;
+    opacity: 1;
+    width: 400px;
+    
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 830px) {
+    section {
+        width: 300px;
+    height: 200px;
+    }
+
+    .inputArea {
+        padding: 8px;
+        font-size: 8px;
+        font-size: 20px;
+        width: 100px;
+        height: 150px;
+        max-height: 300px;
+        min-height: 100px;;
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .input {
+        padding: 8px;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 100;
+        color: var(--color-secundary);
+        background-color: #ffffff;
+        border-radius: 8px;
+        border: 2px solid var(--color-primary);
+        width: 300px;
+    
+    }
+}
+

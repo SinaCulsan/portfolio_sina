@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About me</title>
 
     <!-- Le incluyo un ID a styles para poder gestionar el cambio de estilo con js -->
 
-    <link id="style" rel="stylesheet" href="./css/estilo1/styles1.css">
-    <link id="style" rel="stylesheet" href="./css/estilo1/style1-aboutme.css">
+    <link id="style" rel="stylesheet" href="./css/styles1.css">
+    
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,8 @@
         <div class="menuLogo">
             <button class="abrirMenu" id="abrir"><i class="fa-solid fa-bars"></i></button>
 
-            <div class="profile-image"><img src="./recursos/logo/logosina.svg" alt="isotipo">
+            <div class="profile-image">
+                <a href="index.html"><img src="./recursos/logo/logosina.svg" alt="isotipo"></a>
             </div>
 
 
@@ -45,10 +46,10 @@
             <button class="cerrarMenu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
             <ul class="navList">
                 <li> <a id="changeStyleButton" href="#" onclick="changeStyle()">Change the Style!</a></li>
-                <li> <a href="home.html">Home</a></li>
+                <li> <a href="index.html">Home</a></li>
                 <li> <a href="proyectos.html">Work</a></li>
-                <li> <a href="aboutme.html">About me</a></li>
-                <li> <a href="#">Contact</a></li>
+                <li class="active"> <a href="aboutme.html">About me</a></li>
+                <li> <a href="contact1.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -88,7 +89,7 @@
                 viaje profesional.
             </h3>
 
-            <!-- Banner 
+            <!-- 
             <a href="recursos/Curriculum/Currículum_SC_ES (2).pdf" class="buttonCV" download="Sina Culsán Currículum" title="descargarproyecto" >Curriculum</a>
              -->
             <a href="recursos/Curriculum/Currículum_SC_ES (2).pdf" class="buttonCV" download="Sina Culsán Currículum"
